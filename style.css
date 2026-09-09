@@ -175,3 +175,8 @@ header h2 {
     max-width: 350px;
   }
 }
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+}
