@@ -1,0 +1,90 @@
+/* Auth Page Specifics */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.logo-center {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.role-toggle {
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 4px;
+    margin-bottom: 30px;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.toggle-btn.active {
+    background: var(--green-primary);
+    color: var(--bg-dark);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-footer {
+    margin-top: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.auth-footer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: var(--green-primary);
+    font-weight: 600;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">ABSU Tutors</div>
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">My Services</a>
+                <a href="#">Published Books</a>
+                <a href="#">Earnings</a>
+                <a href="index.html" class="logout">Logout</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dash-main">
+            <header class="dash-header">
+                <h2>Welcome, Dr. Eric</h2>
+                <div class="user-profile">EP</div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Earnings</h3>
+                    <p class="value">₦45,000</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Students</h3>
+                    <p class="value">12</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Books Sold</h3>
+                    <p class="value">8</p>
+                </div>
+            </div>
+
+            <!-- Publish Section -->
+            <section class="publish-section">
+                <h3>Publish New Service or Book</h3>
+                <form class="publish-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Title</label>
+                            <input type="text" placeholder="e.g., Advanced Calculus II">
+                        </div>
+                        <div class="input-group">
+                            <label>Type</label>
+                            <select>
+                                <option>Tutoring Service</option>
+                                <option>E-Book</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Description</label>
+                        <textarea rows="4" placeholder="Describe what students will learn..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Price (₦)</label>
+                            <input type="number" placeholder="10000">
+                        </div>
+                        <div class="input-group">
+                            <label>Upload Cover/Image</label>
+                            <input type="file">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Publish Now</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

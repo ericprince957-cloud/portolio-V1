@@ -1,25 +1,77 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UFT-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Prince Webpage</title>
-    </head>
-
-    <!--Body-->
-    <body>
-        <!--Header.-->
-        <header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSU Tutors - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ABSU Tutors</div>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <!-- Link to the Auth page we just built -->
+                <li><a href="auth.html" class="btn-sm-nav">Join Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero-content">
             <h1>Ace your exams with Top ABSU tutors</h1>
-            <h2>
-                <em>Meet with one of the best ABSU tutors..</em>
-            </h2>
-            <button class="btn">Book a session via whatsapp</button>
-        </header>
+            <h2><em>Meet with one of the best ABSU tutors..</em></h2>
+            <a href="https://wa.me/2347084547988" class="btn" target="_blank">Book a session via whatsapp</a>
+        </div>
+    </header>
 
-        <!--main-->
-        <main>
-            
-        </main>
-    </body>
+    <main>
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <p>Choose a subject and start learning.</p>
+            <div class="service-container">
+                <div class="service-card">
+                    <h3>Mathematics</h3>
+                    <p>Improve your problem-solving and mathematical skills.</p>
+                    <h4>₦10,000</h4>
+                    <a href="auth.html"><button class="btn-outline">Get Started</button></a>
+                </div>
+                <div class="service-card">
+                    <h3>English</h3>
+                    <p>Improve your grammar, writing, reading, and communication.</p>
+                    <h4>₦8,000</h4>
+                    <a href="auth.html"><button class="btn-outline">Get Started</button></a>
+                </div>
+                <div class="service-card">
+                    <h3>Physics</h3>
+                    <p>Understand physics concepts and solve problems confidently.</p>
+                    <h4>₦12,000</h4>
+                    <a href="auth.html"><button class="btn-outline">Get Started</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p>"The lessons are easy to understand and have really helped me improve my grades."</p>
+                    <h3>John Doe</h3>
+                    <span>200 Level</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I really enjoy the way the subjects are explained. The tutors make difficult topics much easier."</p>
+                    <h3>Jane Smith</h3>
+                    <span>200 Level</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ABSU Tutors. All rights reserved.</p>
+    </footer>
+</body>
 </html>
