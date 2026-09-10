@@ -53,33 +53,28 @@
     </main>
 
     <!-- Add this script at the bottom of auth.html -->
-<script>
-    function switchRole(role) {
-        const studentBtn = document.querySelector('.toggle-btn:first-child');
-        const tutorBtn = document.querySelector('.toggle-btn:last-child');
-        const formTitle = document.getElementById('formTitle');
-        const tutorFields = document.querySelector('.tutor-only');
-        const submitBtn = document.querySelector('button[type="submit"]');
+    <script>
+        function switchRole(role) {
+            const studentBtn = document.querySelector('.toggle-btn:first-child');
+            const tutorBtn = document.querySelector('.toggle-btn:last-child');
+            const formTitle = document.getElementById('formTitle');
+            const tutorFields = document.querySelector('.tutor-only');
+            const submitBtn = document.querySelector('button[type="submit"]');
 
-        if (role === 'student') {
-            studentBtn.classList.add('active');
-            tutorBtn.classList.remove('active');
-            formTitle.innerText = "Student Registration";
-            submitBtn.innerText = "Create Student Account";
-            if(tutorFields) tutorFields.style.display = 'none';
-        } else {
-            tutorBtn.classList.add('active');
-            studentBtn.classList.remove('active');
-            formTitle.innerText = "Tutor Registration";
-            submitBtn.innerText = "Create Tutor Account";
-            if(tutorFields) tutorFields.style.display = 'block';
+            if (role === 'student') {
+                studentBtn.classList.add('active');
+                tutorBtn.classList.remove('active');
+                formTitle.innerText = "Student Registration";
+                submitBtn.innerText = "Create Student Account";
+                if(tutorFields) tutorFields.style.display = 'none';
+            } else {
+                tutorBtn.classList.add('active');
+                studentBtn.classList.remove('active');
+                formTitle.innerText = "Tutor Registration";
+                submitBtn.innerText = "Create Tutor Account";
+                if(tutorFields) tutorFields.style.display = 'block';
+            }
         }
-    }
-</script>
-<div class="role-toggle">
-    <button type="button" class="toggle-btn active" onclick="switchRole('student')">Student</button>
-    <button type="button" class="toggle-btn" onclick="switchRole('tutor')">Tutor</button>
-</div>
-
+    </script>
 </body>
 </html>

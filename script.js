@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     approveBtns.forEach(btn => {
         if (btn.textContent === 'Approve') {
             btn.addEventListener('click', function() {
-                if(confirm("Are you sure you want to approve this user?")) {
+                if (confirm("Are you sure you want to approve this user?")) {
                     const row = this.closest('tr');
                     const badge = row.querySelector('.badge');
                     
