@@ -51,3 +51,37 @@ footer { background: #0f172a; color: white; text-align: center; padding: 1rem; }
     .navbar { flex-direction: column; gap: 10px; }
     .hero h1 { font-size: 1.8rem; }
 }
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.btn-nav {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #aaa;
+}
