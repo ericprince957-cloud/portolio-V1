@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABSU Tutors - Ace Your Exams</title>
-    <!-- THIS LINE LINKS YOUR CSS -->
+    <!-- LINK TO YOUR CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons (Optional but recommended) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -15,15 +17,26 @@
         <nav>
             <a href="#services">Services</a>
             <a href="#testimonials">Reviews</a>
-            <a href="https://wa.me/2347084547988" class="btn-nav">Book Now</a>
+            <!-- Custom WhatsApp Message in Nav -->
+            <a href="https://wa.me/2347084547988?text=Hello%20I%20am%20interested%20in%20tutoring%20services" class="btn-nav" target="_blank">Book Now</a>
         </nav>
     </header>
 
-    <!-- HERO SECTION (The First Thing Clients See) -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <h1>Ace Your Exams With Top ABSU Tutors</h1>
-        <p>Get private lessons in Math, Physics, and English.</p>
-        <a href="https://wa.me/2347084547988" class="btn-main">Book a Session via WhatsApp</a>
+        <p>Get private lessons in Math, Physics, and English delivered to you.</p>
+        
+        <div class="cta-buttons">
+            <!-- WhatsApp with Custom Message -->
+            <a href="https://wa.me/2347084547988?text=Hello%20I%20want%20to%20book%20a%20tutor%20session" class="btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <!-- Direct Call Button -->
+            <a href="tel:+2347084547988" class="btn btn-call">
+                <i class="fas fa-phone"></i> Call Directly
+            </a>
+        </div>
     </section>
 
     <!-- SERVICES SECTION -->
@@ -51,25 +64,35 @@
             <h2>What Students Say</h2>
             <div class="testimonial">
                 <p>"The lessons helped me improve my grades significantly!"</p>
-                <span>- samual joy, 200 Level</span>
+                <span>- Samual Joy, 200 Level</span>
             </div>
             <div class="testimonial">
                 <p>"Finally understood Physics concepts easily."</p>
-                <span>- chisom okafor, 200 Level</span>
+                <span>- Chisom Okafor, 200 Level</span>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-    <p>Ready to work with me?</p>
-
-    <a href="https://wa.me/2347084547988" class="btn-nav">
-        Hire Now
-    </a>
-
-    <p>&copy; 2026 ABSU Tutors. Built by Vector.</p>
-<p>Available for Hire: DM for Web Design & Automation Services.</p>
+        <div class="footer-content">
+            <h3>Ready to work with me?</h3>
+            <p>I build professional websites for students and businesses.</p>
+            
+            <div class="footer-buttons">
+                <a href="https://wa.me/2347084547988?text=Hi%20Vector,%20I%20need%20a%20website" class="btn btn-footer" target="_blank">
+                    Hire Me on WhatsApp
+                </a>
+                <a href="tel:+2347084547988" class="btn btn-footer-outline">
+                    Call Me
+                </a>
+            </div>
+            
+            <p class="copyright">&copy; 2026 ABSU Tutors. Built by Vector.</p>
+            <p class="tagline">Available for Hire: Web Design & Automation Services.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
